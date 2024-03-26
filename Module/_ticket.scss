@@ -1,0 +1,92 @@
+.ticket {
+    .container {
+        @include media-lg {
+            padding: 3.2vw 2.4vw 2.4vw;
+        }
+        @include media-md {
+            padding: 3vw 0vw 2vw;
+        }
+    }
+}
+
+.ticket-nav {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4vh;
+    li {
+        min-width: 120px;
+        margin-right: 1rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        @include media-md {
+            width: 50%;
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+        .btn-change {
+            width: 100%;
+            color: #000;
+            font-size: $h5-font-size;
+            padding-bottom: calc(1.5rem - 5px);
+            @include media-md {
+                padding-bottom: calc(1rem - 5px);
+            }
+        }
+        .btn-change.active {
+            color: $secondary;
+            border-bottom: 5px solid $secondary;
+        }
+    }
+}
+
+.ticket-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @include media-md {
+        flex-direction: column;
+    }
+    .ticket-item {
+        width: 31%;
+        margin: 1%;
+        border: 1px solid #ccc;
+        @include media-md {
+            width: 100%;
+            margin: 0 0 1rem;
+        }
+        .ticket-pic {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.ticket-txt {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .ticket-title {
+        font-size: $h6-font-size;
+        margin-bottom: 3vh;
+    }
+    h5 {
+        font-size: 16px;
+        line-height: $lh-sm;
+        .fa {
+            
+            font-weight: $font-weight-regular;
+            width: 25px;
+            text-align: center;
+            margin-right: .5rem;
+        }
+    }
+    .ticket-price {
+        font-size: $h5-font-size;
+        margin: 3vh 0;
+        color: $secondary;
+    }
+    input {
+        align-self: flex-end;
+    }
+}

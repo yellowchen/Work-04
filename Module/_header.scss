@@ -1,0 +1,134 @@
+// <!-- 01 HEADER -->
+.header {
+    height: 80px;
+    line-height: 80px;
+    background: $theme;
+    padding: 0 1.5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    nav {
+        height: 100%;
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+.logo {
+    width: 54px;
+    height: 54px;
+
+    font-size: $h2-font-size;
+    color: currentColor;
+    border: 4px solid currentColor;
+    border-radius: 50%;
+    text-align: center;
+    a {
+        color: currentColor;
+        .fa {
+            vertical-align: top;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include media-md {
+        position: fixed;
+        background-color: antiquewhite;
+        top: 100px;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    }
+    .menu-link {
+        margin: 0 1.5rem;
+        font-size: $h5-font-size;
+        a {
+            color: currentColor;
+            @include media-md {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.menu.active {
+    right: 0;
+}
+
+.nav-side {
+    display: flex;
+    align-items: center;
+    .cart {
+        font-size: $h3-font-size;
+        position: relative;
+    }
+    .cart {
+        font-size: $h3-font-size;
+        position: relative;
+        color: #fff;
+        .cart-quantity {
+            position: absolute;
+            font-size: 12px;
+            font-family: "limelight";
+            font-weight: $font-weight-regular;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 15px;
+            right: -9px;
+        }  
+    }
+    .bread-crumb {
+        display: none;
+        .bar {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin: 8px 0;
+            transition: .3s;
+        }
+        @include media-md {
+            cursor: pointer;
+            display: block;
+            margin-left: 4vw;
+        }
+    }
+    .bread-crumb.active {
+        .bar:nth-child(1) {
+            transform: translateY(10px) rotate(45deg);
+        }
+        .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .bar:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+    }
+}
+
+
+
+.nav-effect {
+    height: 80px;
+}
+
+//上方的縫隙

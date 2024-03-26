@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Limelight', "Noto Sans TC",cursive;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5rem;
+    border: #fff;
+    border-radius: 5px;
+    margin-top: 0;
+    font-family: "limelight";
+    // align-self: flex-end;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: #fff;   
+}
+
+.btn-danger {
+    background-color: $secondary;
+    color: #fff;
+}
+
+.theme-bg {
+    background-color: $bg-primary;
+}

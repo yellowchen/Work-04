@@ -1,0 +1,148 @@
+.product-menu {
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    &::before, &::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        margin: auto 0;
+        background-color: #aaa;
+        flex-grow: 1;
+    }
+    .product-link {
+        min-width: 150px;
+        border: 1px solid #aaa;
+        padding: 1rem 0;
+        margin: 0 1vw;
+        text-align: center;
+        position: relative;
+        //關於設定nav項目的尺寸：
+        //1.設min-width or width固定寬度
+        //2.設定padding left & right 為 0，這樣才能讓每個項目保持固定寬度
+        //3.設定text-align: center;讓文字保持字中
+            @include media-sm {
+                min-width: 130px;
+            }
+            @include media-xs {
+                font-size: $font-size-sm;
+                min-width: 100px;
+            }
+        &:hover {
+            background-color: $primary;
+            border: currentColor;
+            a {
+                color: #fff;
+            }
+        }
+        a {
+            width: 100%;
+            color: #aaa;
+        }
+    }
+}
+
+.product-link.active {
+    background-color: $primary;
+    border: currentColor;
+    a {
+        color: #fff;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 10px solid $primary;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        top: 48px;
+        left: 65px;
+    }
+}
+
+.owl-carousel {
+    position: static;
+}
+
+.owl-theme {
+    .item {
+    min-width: 180px;
+    padding: .5rem;
+    position: relative;
+    }
+    // .owl-stage-outer {
+    // }
+    .owl-nav {
+        margin-top: 2vh;    
+    }
+    .owl-nav [class*='owl-'] {
+        margin: 20px;
+    }
+    .owl-dots {
+        display: none;
+    }
+}
+
+.owl-theme {
+    .item {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid transparent;
+            top: -32px;
+            right: -32px;
+            transform: rotate(45deg);
+            
+        }
+        &::before {
+            content: "More";
+            position: absolute;
+            color: #fff;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-regular;
+            top: 22px;
+            right: 8px;
+            z-index: -1;
+        }
+        &:hover {
+            border: 3px double #aaa;
+            border-radius: 5px;
+        }
+        &:hover.item::before {
+            z-index: 1;
+        }
+        &:hover.item::after {
+            border-bottom: 40px solid $secondary;    
+        }
+    }
+}
+
+
+
+.owl-theme .item a {
+            width: 100%;
+            .item-txt {
+                width: 100%;
+                height: 90px;
+                padding: .5rem;
+                display: flex;
+                flex-direction: column;
+                
+                font-size: 13px;
+                line-height: $lh-sm;
+                text-align: center;
+                color: #000;
+                p:last-child {
+                    color: $secondary;
+                    margin-top: auto;
+                    //要把價錢設在尾端置中：父容器要設定高度
+                }
+            }
+        }

@@ -1,0 +1,55 @@
+<div class="header">
+    <nav class="main-nav nav">
+        <div class="logo">
+            <a href="index.html">
+                <i class="fa fa-chain-broken" aria-hidden="true"></i>
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="menu-link">
+                <a href="/Pages/intro.html">Intro</a>
+            </li>
+            <li class="menu-link">
+                <a href="/Pages/expo.html">Expo</a>
+            </li>
+            <li class="menu-link">
+                <a href="/Pages/ticket.html">Ticket</a>
+            </li>
+            <li class="menu-link">
+                <a href="/Pages/product.html">Product</a>
+            </li>
+        </ul>
+        <div class="nav-side">
+            <a class="cart" href="/Pages/store.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true">
+                    <span class="cart-quantity">0</span>
+            </i>
+            </a>
+            <div class="bread-crumb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="nav-effect"></div>
+
+
+<script>
+
+const bread = document.querySelector(".bread-crumb");
+const menu = document.querySelector(".menu");
+bread.addEventListener("click", mobileMenu);
+function mobileMenu() {
+    bread.classList.toggle("active");
+    menu.classList.toggle("active");
+}
+
+const link = document.querySelectorAll(".menu-link");
+link.forEach(n => n.addEventListener("click", closeMenu));
+function closeMenu() {
+    bread.classList.remove("active");
+    menu.classList.remove("active");
+}
+</script>

@@ -1,0 +1,88 @@
+// 【ICONS】
+// https://fontawesome.com/v4/icons/
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+//icon
+//FB <i class="fa fa-facebook-square" aria-hidden="true"></i>
+//TW <i class="fa fa-twitter" aria-hidden="true"></i>
+//IG <i class="fa fa-instagram" aria-hidden="true"></i>
+//YT <i class="fa fa-youtube" aria-hidden="true"></i>
+//mail <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+
+
+// scss-docs-start theme-color-variables 
+$theme: linear-gradient(to right, #b1939d 0%,#a27f9d 25%,#797ab0 50%,#607fb6 75%,#5787af 100%);
+$primary: #607fb6; 
+$secondary: #FF5D50;
+$tertiary: #b1939d; 
+
+$black: #221E1F; 
+$white: #FFF; 
+$light-gray: #F5F5F5; 
+
+// scss-docs-end theme-color-variables 
+
+// background(color)
+$bi_b-g: linear-gradient(0deg, #185a9d, #43cea2);
+$bi_r-b: linear-gradient(35deg, #CCFFFF,#FFCCCC);
+$bi_r-r: linear-gradient(0deg, #cc4380, #fb6c75);
+$bi_r-w: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+$bg-primary: #eee;
+
+
+// scss-docs-start box-shadow-variables
+//box-shadow 
+$b-s_a: 0px 2px 10px #00000014; 
+
+//??
+// scss-docs-end box-shadow-variables 
+$component-active-color: $white ; 
+$component-active-bg: $primary ; 
+
+//【font】
+//03 font-weight
+$font-weight-regular: 400; 
+$font-weight-bold: 700;
+
+//04 font-size
+$font-size-base: 4px; 
+$font-m: $font-size-base* 4;//預設字型大小
+$h1-font-size: $font-size-base * 15; //60px
+$h2-font-size: $font-size-base * 12; //48px 
+$h3-font-size: $font-size-base * 8 ; //32px 
+$h4-font-size: $font-size-base * 6 ; //24px 
+$h5-font-size: $font-size-base * 5; //20px 
+$h6-font-size: $font-size-base * 4.5 ; //18px
+$font-size-sm: $font-size-base * 3; //12px
+
+//05 line-height
+$lh-1: 1;
+$lh-sm: 1.25;
+$lh-base: 1.5;
+$lh-md: 1.75;
+$lh-lg: 2;
+
+//06 font-family
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" 
+; 
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default; 
+
+//text-shadow
+$ts-a: 0 0 10px #ccc;
+
+
+//【Margin】
+$m-b-l: 2rem;
+$m-b-m: 1rem;
+$m-b-s: .5rem;
+
+//【media query】
+$media-xxs: 360px;
+$media-xs: 430px;
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+$media-xxl: 1400px;

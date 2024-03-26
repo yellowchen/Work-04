@@ -1,0 +1,135 @@
+//footer
+.footer {
+    padding: 2rem 6rem 1rem;
+    color: #fff;
+    background: $theme;
+    display: flex;
+    flex-direction: column;
+    font-size: $h4-font-size;
+    line-height: $lh-base;
+    @include media-lg {
+        padding: 1rem;
+    }
+    @include media-sm {
+        font-size: $font-m;
+    }
+}
+
+
+.service {
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 2%;
+    margin: 0 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media-md {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .company {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        @include media-md {
+            text-align: center;
+            margin-bottom: 1vh;
+            line-height: 0.5;
+        }
+        h4 {
+            padding: .5rem 0;
+        }
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+        color: currentColor;
+        font-size: $h3-font-size;
+        padding: 0 1rem;
+    }
+}
+.subscribe {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    font-size: $h6-font-size;
+    @include media-sm {
+        display: none;
+    }
+    .subscribe-txt {
+        border: 5px solid #fff;
+        border-radius: 5px 5px 0 0;
+        padding: .5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include media-md {
+            font-size: $font-m;
+        }
+        h5 {
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+        p {
+            font-weight: $font-weight-regular;
+            @include media-md {
+                display: none;
+            }
+        }
+    }
+    .subscribe-btn {
+        font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        input {
+            padding: .3rem;
+            border: 1px solid #fff;
+            outline: 0;
+        }
+        input[type="text"]{
+            border-radius: 0 0 0 5px;
+            width: 0;
+            flex-grow: 1;
+        }
+        input[type="button"]{
+            color: $primary;
+            font-family: "limelight";
+            border-radius: 0 0 5px 0;
+            background-color: #fff;
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-size: $h6-font-size;
+    font-weight: $font-weight-regular;
+    margin-bottom: 0;
+    @include media-lg {
+        font-size: $lh-base;
+        justify-content: center;
+    }
+    @include media-sm {
+        font-size: $font-size-sm;
+    }
+    .terms {
+        a {
+            color: #fff;
+        }
+        @include media-lg {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Museum</title>
+
+    <!-- owl.carousel CSS-->
+    <link rel="stylesheet" href="/JS/owl.carousel.css">
+    <link rel="stylesheet" href="/JS/owl.theme.default.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/all.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    
+    <!-- my JavaScript -->
+    <script src="/script.js"></script>
+    
+</head>
+<body>
+
+    <!-- header -->
+    <div class="headerPage"></div>
+
+    <!-- product -->
+    <div class="product theme-bg">
+        <div class="container">
+            
+            <ul class="product-menu">
+                <li class="product-link">
+                    <a href="#">Popular</a>
+                </li>
+                <li class="product-link">
+                    <a href="#">Recommend</a>
+                </li>
+                <li class="product-link">
+                    <a href="#">New</a>
+                </li>
+            </ul>
+
+            <!-- Carousel -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=11">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=12">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=13">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor.</p>
+                            <p>NT$420</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=14">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=15">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>NT$450</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=16">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=17">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit.</p>
+                            <p>NT$400</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=18">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=19">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>NT$420</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=20">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>NT$390</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store.html">
+                        <img src="https://picsum.photos/300/200/?random=21">
+                        <div class="item-txt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>NT$500</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footerPage"></div>
+
+
+
+<!-- script -->
+
+    <!-- owl.carousel JS-->
+    <script src="/JS/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            const productLink = $(".product-link");
+            productLink.click(function() {
+                productLink.each(function() {
+                    $(this).removeClass("active");
+                })
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+
+</body>
+</html>

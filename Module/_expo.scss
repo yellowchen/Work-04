@@ -1,0 +1,107 @@
+.expo-all {
+    display: flex;
+}
+
+.expo-unit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include media-lg {
+            flex-direction: column;
+        }
+    }
+    @include media-lg {
+        flex-direction: column;
+    }
+}
+
+.expo-txt {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    @include media-lg {
+        width: 100%;;
+    }
+    .expo-title {
+        padding-bottom: 2vh;
+        h4 {
+            font-size: $h4-font-size;
+            color: $primary;
+            margin-bottom: 2vh;
+            small {
+                font-size: $font-m;
+                display: block;
+                padding-top: 1vh;
+            }
+        }
+    }
+    h5 {
+        padding: 0 2vw;
+        margin-bottom: 2vh;
+        border-left: 5px solid $tertiary;
+        line-height: $lh-sm;
+    }
+    p {
+        line-height: $lh-base;
+        font-weight: $font-weight-regular;
+        padding-left: 4vw;
+        
+    }
+}
+
+.expo-img {
+    width: 50%;
+    position: relative;
+    margin-top: 2vh;
+    text-align: center;
+    @include media-lg {
+        width: 100%;
+    }
+    &::before {
+        content: "01";
+        position: absolute;
+        width: 6vw;
+        height: 2.5vw;
+        padding: .5vw 0;
+        margin: 0 auto;
+        font-size: 2vw;
+        color: $tertiary;
+        background-color: #eee;
+    }
+    img {
+        width: 90%;
+        height: auto;
+        border-top: 2.5vw solid $tertiary;
+        border-right: 2.5vw solid $tertiary;
+        @include media-lg {
+            width: 50%;
+        }
+    }
+}
+
+//圖片中的數字
+.expo-unit {
+    &:nth-of-type(2) {
+        .expo-img {
+            &::before {
+                content: "02";
+            }
+        }
+    }
+    &:nth-of-type(3) {
+        .expo-img {
+            &::before {
+                content: "03";
+            }
+        }
+    }
+    &:nth-of-type(4) {
+        .expo-img {
+            &::before {
+                content: "04";
+            }
+        }
+    }
+}

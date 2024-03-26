@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Museum</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/all.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
+    
+</head>
+<body>
+
+    <!-- header -->
+    <div class="headerPage"></div>
+
+    <!-- ticket -->
+    <div class="ticket theme-bg">
+        <div class="container">
+            <ul class="ticket-nav">
+                <li>
+                    <a href="#" class="btn-change">Recommend</a>
+                </li>
+                <li>
+                    <a href="#" class="btn-change">Recent</a>
+                </li>
+            </ul>
+            <div class="ticket-all">
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=10" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+    
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=11" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=12" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=13" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=14" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="ticket-item">
+                    <img src="https://picsum.photos/400/200/?random=16" class="ticket-pic">
+                    
+                    <div class="ticket-txt">
+                        <h3 class="ticket-title">Laugh</h3>
+                        <h5 class="ticket-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2024/5/16 ~ 2024/5/26
+                        </h5>
+                        <h5 class="ticket-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h5>
+                        <h4 class="ticket-price">
+                            $300 ~ 5,600
+                        </h4>
+                        <input type="button" value="MORE" class="btn btn-primary">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footerPage"></div>
+
+
+    <script>
+
+        $(document).ready(function() {
+            var btnChange  = $(".btn-change");
+            btnChange.click(function(){
+                btnChange.each(function(){
+                    $(this).removeClass("active");
+                })
+                $(this).addClass("active");
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>

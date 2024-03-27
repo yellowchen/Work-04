@@ -39,7 +39,9 @@ $(document).ready(function () {
 			1080: {
 				items: 5,
 			},
-		},
+		}
+
 	});
+	
 });
 

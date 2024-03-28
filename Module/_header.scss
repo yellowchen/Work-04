@@ -70,7 +70,7 @@
         position: relative;
         transition: .3s;
         @include media-sm {
-            font-size: $font-size-sm;
+            font-size: $font-m;
         }
         a {
             color: currentColor;

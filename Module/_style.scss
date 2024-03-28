@@ -1,43 +1,24 @@
 // recent
-.recent .container {
-    h2 {
-        font-size: $h2-font-size;
-        margin-bottom: 1rem;
-        @include media-md {
-            text-align: center;
-        }   
-    }
-    @include media-lg {
-        padding: 3rem 2rem 2rem;
-    }
-    @include media-md {
-        padding: 2rem 0rem 1rem;
+.recent {
+    .container {
+        h2 {
+            font-size: $h2-font-size;
+            margin-bottom: 1vw;
+            @include media-md {
+                text-align: center;
+            }   
+        }
     }
 }
-
-
-
 
 .recent-expo-all {
     display: flex;
     flex-direction: column;
     .r-expo-item {
         height: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         background-color: #ffe9e7;
         display: flex;
-        .r-expo-pic {
-            width: 100%;
-            height: 100%;
-            img {
-                width: 300px;
-                height: 300px;
-                @include media-md {
-                    width: 100%;
-                    height: 300px;
-                }
-            }
-        }
         @include media-md {
             flex-direction: column;
             width: 100%;
@@ -46,11 +27,24 @@
     }
 }
 
+.r-expo-pic {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 300px;
+        @include media-md {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
 .r-expo-content {
     display: flex;
     .r-expo-txt {
         line-height: $lh-base;
-        padding: 1rem;
+        padding: 1vw;  
         display: flex;
         flex-direction: column;
         @include media-md {
@@ -68,25 +62,23 @@
             }
         }
         .r-expo-btn {
-            width: 13rem;
+            width: 14rem;
             margin-top: auto;
             display: flex;
+            @include media-md {
+                margin-top: 2vw;
+            }
             input {
-                border: 1px solid #ffe9e7;
-                border-radius: 5px;
-                padding: .4rem .5rem;
-                color: #ffe9e7;
-                background: $primary;
-                margin-right: .5rem;
-                font-family: "limelight";
                 width: 0;
+                margin-right: .5rem;
                 flex-grow: 1;
+                color: #ffe9e7;
             }
         }
         
     }
     .r-expo-other {
-        padding: 1rem;
+        padding: 1vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

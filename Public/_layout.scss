@@ -1,6 +1,14 @@
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 8vw;
-    //考慮到下面item都會有margin-bottom當間距
+    padding: 8vw 8vw 2vw;
+    @include media-lg {
+        padding: 3vw 2vw 2vw;
+    }
+    @include media-md {
+        padding: 4vw 1vw 1vw;
+    }
+    @include media-sm {
+        padding: 3vw 1vw 1vw;
+    }
 }

@@ -1,7 +1,7 @@
 // <!-- 02 BANNER -->
 .banner {
     background: 
-    url("https://github.com/yellowchen/Work-04/blob/master/img/unsplash-smile.jpg?raw=true") fixed center / cover;
+    url("https://github.com/yellowchen/Work-04/blob/master/img/unsplash-smile.jpg?raw=true") fixed center bottom / cover;
     height: 100vh;
     padding-right: 4rem;
     display: flex;
@@ -16,13 +16,13 @@
     h1 {
         font-size: clamp(3.1rem, pxToVw(100), 8rem);
         text-shadow: $ts-a;
-        margin: .5rem 0;
+        margin: .5vw 0;
     }
     h2 {
         font-size: clamp(1.5rem, pxToVw(36), 4rem);
     }
     h2:first-child {
         color: #fff;
-        letter-spacing: .5rem;
+        letter-spacing: .5vw;
     }
 }

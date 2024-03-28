@@ -1,18 +1,7 @@
-.ticket {
-    .container {
-        @include media-lg {
-            padding: 3.2vw 2.4vw 2.4vw;
-        }
-        @include media-md {
-            padding: 3vw 0vw 2vw;
-        }
-    }
-}
-
 .ticket-nav {
     display: flex;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 4vh;
+    margin-bottom: 4vw;
     li {
         min-width: 120px;
         margin-right: 1rem;
@@ -26,7 +15,7 @@
         .btn-change {
             width: 100%;
             color: #000;
-            font-size: $h5-font-size;
+            font-size: $h4-font-size;
             padding-bottom: calc(1.5rem - 5px);
             @include media-md {
                 padding-bottom: calc(1rem - 5px);
@@ -68,7 +57,7 @@
     padding: 1rem;
     .ticket-title {
         font-size: $h6-font-size;
-        margin-bottom: 3vh;
+        margin-bottom: 3vw;
     }
     h5 {
         font-size: 16px;
@@ -83,7 +72,7 @@
     }
     .ticket-price {
         font-size: $h5-font-size;
-        margin: 3vh 0;
+        margin: 3vw 0;
         color: $secondary;
     }
     input {

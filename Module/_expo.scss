@@ -5,7 +5,7 @@
 .expo-unit {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6vh;
+    margin-bottom: 6vw;
     &:nth-child(even) {
         flex-direction: row-reverse;
         @include media-lg {
@@ -25,21 +25,21 @@
         width: 100%;;
     }
     .expo-title {
-        padding-bottom: 2vh;
+        padding-bottom: 2vw;
         h4 {
             font-size: $h4-font-size;
             color: $primary;
-            margin-bottom: 2vh;
+            margin-bottom: 2vw;
             small {
                 font-size: $font-m;
                 display: block;
-                padding-top: 1vh;
+                padding-top: 1vw;
             }
         }
     }
     h5 {
         padding: 0 2vw;
-        margin-bottom: 2vh;
+        margin-bottom: 2w;
         border-left: 5px solid $tertiary;
         line-height: $lh-sm;
     }
@@ -54,7 +54,7 @@
 .expo-img {
     width: 50%;
     position: relative;
-    margin-top: 2vh;
+    margin-top: 2w;
     text-align: center;
     @include media-lg {
         width: 100%;

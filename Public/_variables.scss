@@ -16,7 +16,7 @@
 $theme: linear-gradient(to right, #b1939d 0%,#a27f9d 25%,#797ab0 50%,#607fb6 75%,#5787af 100%);
 $primary: #607fb6; 
 $secondary: #FF5D50;
-$tertiary: #b1939d; 
+$tertiary: #185aaf;
 
 $black: #221E1F; 
 $white: #FFF; 
@@ -48,7 +48,7 @@ $font-weight-bold: 700;
 
 //04 font-size
 $font-size-base: 4px; 
-$font-m: $font-size-base* 4;//預設字型大小
+$font-m: $font-size-base* 4;//16px(預設)
 $h1-font-size: $font-size-base * 15; //60px
 $h2-font-size: $font-size-base * 12; //48px 
 $h3-font-size: $font-size-base * 8 ; //32px 

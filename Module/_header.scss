@@ -2,29 +2,31 @@
 .header {
     height: 80px;
     line-height: 80px;
+    padding: 0 1rem;
     background: $theme;
-    padding: 0 1.5rem;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 3;
     nav {
-        height: 100%;
         width: 100%;
+        height: 100%;
         max-width: 1920px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #fff;
     }
+    @include media-xs {
+        height: 48px;
+        line-height: 48px;
+    }
 }
 
 .logo {
     width: 54px;
     height: 54px;
-
     font-size: $h2-font-size;
     color: currentColor;
     border: 4px solid currentColor;
@@ -36,6 +38,11 @@
             vertical-align: top;
         }
     }
+    @include media-xs {
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
 }
 
 .menu {
@@ -45,21 +52,50 @@
     @include media-md {
         position: fixed;
         background-color: antiquewhite;
-        top: 100px;
+        width: 100%;
+        top: 80px;
         right: -100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         transition: .3s;
     }
+    @include media-xs {
+        top: 48px;
+    }
     .menu-link {
+        height: auto;
         margin: 0 1.5rem;
         font-size: $h5-font-size;
+        position: relative;
+        transition: .3s;
+        @include media-sm {
+            font-size: $font-size-sm;
+        }
         a {
             color: currentColor;
             @include media-md {
                 color: $primary;
             }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid currentColor;
+            bottom: 21px;
+            left: 50%;
+            right: 50%;
+            transition: .3s;
+            @include media-md {
+                border-bottom: 3px solid $primary;
+            }
+        }
+        &:hover::before {
+            left: 0;
+            right: 0;
+        }
+        &:hover {
+            transform: translateY(-5px);
         }
     }
 }
@@ -93,6 +129,9 @@
             align-items: center;
             top: 15px;
             right: -9px;
+            @include media-xs {
+                top: 5px;
+            }
         }  
     }
     .bread-crumb {
@@ -105,6 +144,10 @@
             border-radius: 20px;
             margin: 8px 0;
             transition: .3s;
+            @include media-xs {
+                width: 23px;
+                margin: 5px 0;
+            }
         }
         @include media-md {
             cursor: pointer;
@@ -122,6 +165,14 @@
         .bar:nth-child(3) {
             transform: translateY(-10px) rotate(-45deg);
         }
+        @include media-xs {
+            .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+            }
+            .bar:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+        }
     }
 }
 
@@ -129,6 +180,9 @@
 
 .nav-effect {
     height: 80px;
+    @include media-xs {
+        height: 48px;
+    }
 }
 
 //上方的縫隙

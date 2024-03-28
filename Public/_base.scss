@@ -32,18 +32,25 @@ a {
     border: #fff;
     border-radius: 5px;
     margin-top: 0;
+    font-size: 16px;
     font-family: "limelight";
     // align-self: flex-end;
 }
 
 .btn-primary {
     background-color: $primary;
-    color: #fff;   
+    color: #fff;
+    &:hover {
+        background-color: $tertiary;
+    }   
 }
 
 .btn-danger {
     background-color: $secondary;
     color: #fff;
+    &:hover {
+        background-color: #ff1603;
+    }
 }
 
 .theme-bg {
